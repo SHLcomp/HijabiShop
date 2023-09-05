@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Dancing+Script:wght@600&family=Josefin+Sans:wght@300&family=Phudu:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* root */
+:root{
+    --primary-bg-color: rgb(255, 163, 114);
+    --secondary-bg-color: white;
+    --accent-color: white;
+    --accent-color2: rgb(255, 255, 161);
+    --default-font-color: black;
+    --fancy-font-color: rgb(255, 163, 114);
+}
+
+/* shared css */
+.center-text{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    text-decoration: none;
+    list-style: none;   /* Only if I made the links outside an li*/
+    color: var(--default-font-color);
+}
+/* header */
+header .navbar span .burg{
+    background-color: var(--accent-color);
+    position: fixed;
+    top: 0.7cm;
+    left: 1.3rem;
+}
+.burg.scrolled{
+    background-color: black;
+}
+header .navbar span {
+    cursor: pointer;
+    transition: .3s;
+}
+header .navbar span:hover{
+    color: var(--fancy-font-color);
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-block: 20px;
+    transition: .4s;
+}
+.navbar:hover{
+    background-color: white;
+    box-shadow: 2px 2px 8px;
+}
+.navbar:hover
+h1{
+    letter-spacing: 2px;
+    color: black;
+    font-weight: 900;
+}
+.navbar:hover
+span{
+    color: var(--default-font-color);
+}
+.navbar:hover
+.burg{
+    color: var(--default-font-color);
+}
+header .navbar h1{
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Phudu';
+    transition: .2s;
+    color: var(--fancy-font-color);
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1cm;
+}
+.navbar ul li:first-child{
+    margin-left: 23cm;
+}
+.navbar ul li{
+    margin-top: -.9cm;
+}
+.navbar ul li span i{
+    display: list-item;
+    text-align: center;
+}
+.navbar ul li span{
+    color: var(--accent-color);
+}
+span.scrolled{
+    color: black;
+}
+.navbar span .burg{
+    color: var(--accent-color);
+}
+.burg.scrolled{
+    color: black;
+}
+/* section1 */
+.section1 .interface-pic img{
+    width: 100%;
+}
+
+/* subnav box */
+.subnav-container{
+    background-color: var(--secondary-bg-color);
+    opacity: .50;
+    box-shadow: 2px 2px 8px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    padding-top: .3cm;
+    padding-left: 2rem;
+    font-size: 28px;
+    padding: 10px;
+    left: -10cm;
+    transition: .4s;
+}
+.subnav-container:hover{
+    opacity: 1;
+}
+.subnav-container.active{
+    left: 0cm;
+}
+.subnav-container .subnav ul{
+    list-style: none;
+
+}
+.subnav-container .subnav ul li a{
+    color: var(--default-font-color);
+    transition: .2s;
+}
+.subnav-container .subnav ul li a:hover{
+    color: var(--fancy-font-color);
+}
+#close-burg{
+    margin-left: 8rem;
+    cursor: pointer;
+    transition: .3s;
+}
+#close-burg:hover{
+    transform: scale(1.2);
+}
+/* brand on pic */
+.brand-container{
+    position: absolute;
+    top: 18rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.brand-container .brand-info-div h1{
+    font-size: 3rem;
+    color: var(--accent-color2);
+}
+.brand-container .brand-info-div h1, .brand-container .brand-info-div .shop-btn {
+    font-family: 'Phudu';
+    letter-spacing: 2px;
+} 
+.brand-container .brand-info-div .shop-btn{
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding-block: 10px;
+    background-color: var(--accent-color2);
+    border: 2px solid var(--accent-color2);
+    font-weight: 800;
+    transition: .3s;
+}
+.brand-container .brand-info-div .shop-btn a{
+    color: var(--fancy-font-color);
+}
+.brand-container .brand-info-div .shop-btn:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+}
+
+/* new arrivals */
+.section2{
+    background-color: var(--secondary-bg-color);
+    margin-top: 4rem;
+}
+.section2 .section2-text h1{
+    color: var(--fancy-font-color);
+}
+.section2 .section2-imgs{
+    display: flex;
+    flex-direction: row;
+
+}
+.section2 .section2-imgs img{
+    width: 400px;
+    border: 2px black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.section2 .section2-imgs img:hover{
+    transform: scale(1.01);
+}
